@@ -2,11 +2,11 @@
 - DONE Cache at least one element using querySelector or querySelectorAll. 
 Use the parent-child-sibling relationship to navigate between elements at least once
  (firstChild, lastChild, parentNode, nextElementSibling, etc.).
-Iterate over a collection of elements to accomplish some task.
+- DONE Iterate over a collection of elements to accomplish some task.
 - DONE Create at least one element using createElement.
 - DONE Use appendChild and/or prepend to add new elements to the DOM.
 Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content. 
-Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
+- DONE Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 - DONE Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
 - DONE Modify at least one attribute of an element in response to user interaction.
 - DONE Register at least two different event listeners and create the associated event handler functions.

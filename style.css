@@ -5,15 +5,16 @@
     background-color: rgba(8, 152, 152, 0.537);
     height: 30px;
     border-radius: 30px;
-    border: 10px solid green; 
+    
 }
 
 #grid {
     display: flex;
     flex-wrap: wrap;
-    border: 10px solid black;
     width: 500px;
     margin: 0 auto;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 
@@ -24,4 +25,11 @@
     height: 50px;
     width: 50px;
     background-color: brown;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

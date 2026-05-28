@@ -27,7 +27,7 @@ const grid = document.getElementById('grid')
 for (let i = 1; i <= 100; i ++){
 const div = document.createElement('div');
 div.classList.add('box')
-div.textContent = Math.floor(Math.random() * 100) + 1;
+div.textContent = '?'
 
 div.addEventListener('click', function (event){
     event.target.style.transform = 'rotateY(360deg)';
@@ -36,6 +36,7 @@ div.addEventListener('click', function (event){
 
     setTimeout(function(){
         event.target.textContent = newNumber;
+        event.target.style.color = 'yellow'
     })
 })
 grid.appendChild(div)
