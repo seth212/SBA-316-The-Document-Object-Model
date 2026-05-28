@@ -28,13 +28,16 @@ for (let i = 1; i <= 100; i ++){
 const div = document.createElement('div');
 div.classList.add('box')
 div.textContent = Math.floor(Math.random() * 100) + 1;
+
+div.addEventListener('click', function (event){
+    event.target.style.transform = 'rotateY(360deg)';
+
+    const newNumber = Math.floor(Math.random() * 100)+ 1;
+
+    setTimeout(function(){
+        event.target.textContent = newNumber;
+    })
+})
 grid.appendChild(div)
 }
 
-const boxes = document.querySelector('.box')
-
-for (let box of boxes){
-    box.addEventListener('click', function (event){
-        event.target.style.transform = 'rotateY(180deg)'
-    })
-}

@@ -8,8 +8,8 @@ Iterate over a collection of elements to accomplish some task.
 Use the DocumentFragment interface or HTML templating with the cloneNode method to create templated content. 
 Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 - DONE Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
-- Modify at least one attribute of an element in response to user interaction.
-Register at least two different event listeners and create the associated event handler functions.
+- DONE Modify at least one attribute of an element in response to user interaction.
+- DONE Register at least two different event listeners and create the associated event handler functions.
 Use at least two Browser Object Model (BOM) properties or methods.
 Include at least one form and/or input with HTML attribute validation.
 Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, 
