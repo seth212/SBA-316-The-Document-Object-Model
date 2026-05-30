@@ -33,3 +33,22 @@
     align-items: center;
     height: 100vh;
 }
+
+#memberForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+#errorDisplay {
+
+  background: #fcc;
+  color: red;
+  display: flex;
+  width: 300px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  padding: 20px;
+  display: none;
+}

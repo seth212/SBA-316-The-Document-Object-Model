@@ -11,8 +11,8 @@ Use the DocumentFragment interface or HTML templating with the cloneNode method 
 - DONE Modify at least one attribute of an element in response to user interaction.
 - DONE Register at least two different event listeners and create the associated event handler functions.
 Use at least two Browser Object Model (BOM) properties or methods.
-Include at least one form and/or input with HTML attribute validation.
-Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, 
+- DONE Include at least one form and/or input with HTML attribute validation.
+- DONE Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, 
 but should include event-based validation in addition to the HTML attribute validation.)
 Ensure that the program runs without errors 
 (comment out things that do not work, and explain your blockers - you can still receive partial credit).

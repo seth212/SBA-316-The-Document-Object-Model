@@ -1,4 +1,5 @@
 const MenuBar = document.querySelector('nav')
+const errorDisplay = document.getElementById('errorDisplay')
 
 const menuLinks = [
     {text: 'Home', href: '#'},
@@ -37,8 +38,32 @@ div.addEventListener('click', function (event){
     setTimeout(function(){
         event.target.textContent = newNumber;
         event.target.style.color = 'yellow'
-    })
+    }, 250)
 })
 grid.appendChild(div)
 }
+
+const passwordInput = document.getElementById('password');
+passwordInput.addEventListener('input', function(event){
+if(passwordInput.value.toLowerCase().includes('password')){
+    errorDisplay.style.display = 'flex';
+    errorDisplay.textContent = `Password cannot have the word 'password'`
+
+} else{
+     errorDisplay.style.display = 'none';
+    errorDisplay.textContent = '';
+}
+})
+
+const passwordCheck = document.getElementById('passwordCheck');
+passwordCheck.addEventListener('input', function (event){
+    if(passwordInput.value !== '' && passwordCheck.value !== passwordInput.value){
+        errorDisplay.style.display = 'flex'
+        errorDisplay.textContent = 'Passwords do not match'
+
+    } else {
+        errorDisplay.style.display = 'none';
+        errorDisplay.textContent = ''
+    }
+})
 
