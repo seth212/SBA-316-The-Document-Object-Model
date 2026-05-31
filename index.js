@@ -23,6 +23,7 @@ nav.addEventListener('click', function (event){
 
 
 const grid = document.getElementById('grid')
+let luckyNumber = null;
 
 for (let i = 1; i <= 100; i++){
 const div = document.createElement('div');
@@ -33,6 +34,16 @@ div.addEventListener('click', function (event){
     event.target.style.transform = 'rotateY(360deg)';
 
     const newNumber = Math.floor(Math.random() * 100)+ 1;
+    event.target.textContent = newNumber;
+
+    if (luckyNumber === null){
+        luckyNumber = newNumber;
+        alert(`Your lucky number is ${luckyNumber}`)
+    }
+
+    else if (newNumber === luckyNumber){
+        alert(`You matched your lucky number ${luckyNumber}, YOU WIN!`)
+    }
 
     setTimeout(function(){
         event.target.textContent = newNumber;
@@ -82,3 +93,5 @@ for(box of boxes){
         boxclickSound.play()
     })
 }
+
+
