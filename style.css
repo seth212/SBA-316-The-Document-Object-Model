@@ -10,10 +10,10 @@
 #grid {
     display: flex;
     flex-wrap: wrap;
-    width: 515px;
+    width: 520px;
     margin: 0 auto;
     cursor: pointer;
-    border: 1px solid orange;
+    
 }
 
 
