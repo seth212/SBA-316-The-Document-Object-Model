@@ -13,7 +13,6 @@ for (let link of menuLinks){
     a.textContent = link.text;
     a.href = link.href
     MenuBar.appendChild(a)
-    
 }
 
 const nav = document.querySelector('nav')
@@ -25,10 +24,10 @@ nav.addEventListener('click', function (event){
 
 const grid = document.getElementById('grid')
 
-for (let i = 1; i <= 100; i ++){
+for (let i = 1; i <= 100; i++){
 const div = document.createElement('div');
 div.classList.add('box')
-div.textContent = '?'
+div.textContent = '?' 
 
 div.addEventListener('click', function (event){
     event.target.style.transform = 'rotateY(360deg)';
@@ -65,5 +64,12 @@ passwordCheck.addEventListener('input', function (event){
         errorDisplay.style.display = 'none';
         errorDisplay.textContent = ''
     }
+});
+
+
+const backgroundSound = document.getElementById('backgroundSound');
+
+grid.addEventListener('click', function (event){
+    backgroundSound.play();
 })
 
