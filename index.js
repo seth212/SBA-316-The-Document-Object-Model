@@ -38,8 +38,8 @@ div.addEventListener('click', function (event){
 
     if (luckyNumber === null){
         luckyNumber = newNumber;
-        event.target.style.border = '1px solid gold';
         alert(`Your lucky number is ${luckyNumber}`)
+        event.target.style.border = '1px solid gold';  
     }
 
     else if (newNumber === luckyNumber){
