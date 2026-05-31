@@ -43,7 +43,8 @@ div.addEventListener('click', function (event){
     }
 
     else if (newNumber === luckyNumber){
-        alert(`You matched your lucky number ${luckyNumber}, YOU WIN!`)
+        alert(`You matched your lucky number ${luckyNumber}, YOU WIN!`);
+        event.target.style.border = '1px solid gold';
     }
 
     setTimeout(function(){
