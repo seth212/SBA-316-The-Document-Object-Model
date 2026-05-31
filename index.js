@@ -71,5 +71,14 @@ const backgroundSound = document.getElementById('backgroundSound');
 
 grid.addEventListener('click', function (event){
     backgroundSound.play();
+    backgroundSound.loop = true;
 })
 
+const boxclickSound = document.getElementById('boxclickSound');
+const boxes = document.querySelectorAll('.box');
+
+for(box of boxes){
+    box.addEventListener('click', function(event){
+        boxclickSound.play()
+    })
+}
